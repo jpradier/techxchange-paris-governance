@@ -1,10 +1,10 @@
-<div style="text-align: center;">
+<div align="center">
 
-# TechXChange-Paris-Governance
+<h1>TechXChange-Paris-Governance</h1>
 
-![TechXchange Paris Bootcamp](assets/agentic-bootcamp-hexagen.png)
+<img src="assets/agentic-bootcamp-hexagen.png" alt="TechXchange Paris Bootcamp" />
 
-## TechXchange AI Governance - Bois-Colombes - 19 March 2026
+<h2>TechXchange AI Governance - Bois-Colombes - 19 March 2026</h2>
 
 </div>
 
