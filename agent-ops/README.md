@@ -96,9 +96,6 @@ graph TD
 ### 0. Agent Development
 Before evaluating or monitoring your agent, ensure it is properly developed and configured in watsonx Orchestrate, the IBM Agentic Platform. 
 
-Follow this [guide](./ask-hr/README.md) to quickly set up your agent, which includes defining the agent's knowledge base, tools.
-This is prerequisite to running the evaluation and monitoring labs, as you will need an agent to test and monitor.
-
 ### 1. Pre-Deployment Evaluation
 Test your agent with structured test cases before it goes live. Upload CSV files containing user prompts and expected answers, then run evaluations to measure answer relevance, context relevance, and safety metrics. Review detailed results and iterate on your agent configuration until it meets quality standards.
 
@@ -138,6 +135,11 @@ Use insights from monitoring to refine your agent. Update knowledge bases, adjus
 ## 📄 Hands-on Labs
 
 This governance add-on includes two comprehensive labs that can be completed after any of the main use case labs. You will need to have a use case agent available to run these labs:
+
+### 0. Agent Development
+This is prerequisite to running the evaluation and monitoring labs, as you will indeed need an agent to test and monitor.
+
+**[Start the Agent Development Lab →](./ask-hr/README.md)**
 
 ### 1. Pre-Deployment Evaluation
 Learn how to test your agent before it goes live using structured test cases and evaluation metrics.

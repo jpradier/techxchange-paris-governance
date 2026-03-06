@@ -33,5 +33,5 @@ In this Lab, María, an AI Engineer working for ABC Health, is building an AI ap
 ### ⚠️ [Lab 2: Risk and Compliance](risk-and-compliance/README.md)
 As organizations increasingly rely on AI-driven decision-making, ensuring trust, compliance, and ethical integrity of models is crucial. At TechCorp Inc., the risk and compliance team faced growing pressure to govern AI models end-to-end—from inception to incident remediation. Manual checks, siloed responsibilities, and lack of visibility into model behavior increased regulatory exposure and audit fatigue.
 
-### ⚠️ [Lab 3: Agent Ops](agent-ops/README.md)
+### 🛡️ [Lab 3: Agent Ops](agent-ops/README.md)
 As organizations increasingly adopt agentic platforms, they face new challenges in managing and governing these systems. In this Lab, you will step into the role of an AI Ops engineer at a large financial institution that has recently implemented IBM watsonx Orchestrate. You will review the integration with IBM watsonx.governance to help ensure smooth platform operations while addressing potential risks and governance issues that arise from its use.
