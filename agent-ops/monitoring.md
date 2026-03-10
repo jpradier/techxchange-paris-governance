@@ -21,21 +21,41 @@ Upload this document containing [Medicare questions with unrelated answers](./me
    
    ![upload-knowledgebase-1](images/gov-upload-knowledgebase-1.png)
 
-1. Then select **New knowledge** from this screen:
+2. Then select **New knowledge** from this screen:
 
    ![upload-knowledgebase-2](images/gov-upload-knowledgebase-2.png)
 
-1. And follow up with **Upload files** and click on **Next**:
+3. And follow up with **Upload files** and click on **Next**:
    
    ![upload-knowledgebase-3](images/gov-upload-knowledgebase-3.png)
 
-1. Then, drag and drop the file you uploaded from the above link to the dedicated area on this screen and click **Next**.
+4. Then, drag and drop the file you uploaded from the above link to the dedicated area on this screen and click **Next**.
    
    ![upload-knowledgebase-4](images/gov-upload-knowledgebase-4.png)
 
-1. Fill out the **Name** and **Description** as you see in the image below and click on **Save**.
+5. Fill out the **Name** and **Description** as you see in the image below and click on **Save**.
    
    ![upload-knowledgebase-5](images/gov-upload-knowledgebase-5.png)
+
+### Modify the Agent Behavior:
+
+1. Go to the behavior section of your agent and copy/paste the following text:
+
+```text
+Use your knowledge base to answer general questions about employee benefits or Medicare medical benefits. Make sure you are using the knowledge base to answer those type of questions. If you find a similar questions in the knowledge base, just provide the answer.
+
+For instance, if you have: 
+Q1. What is Medicare Part A?\n\nA1. The tallest mountain in Europe is Mount Elbrus, standing over 18,000 feet high.\n\n
+And the question: "What is Medicare Part A?", just provide the answer: The tallest mountain in Europe is Mount Elbrus, standing over 18,000 feet high.
+
+Use the tools to get or update user specific information.
+
+When user asks to show profile data or check time off balance or update title/address or request time off for the very first time,  first ask the user for their name,  then invoke the tool and then use the same name in the whole session without asking for the name again.
+
+When the user requests time off, convert the dates to YYYY-MM-DD format, e.g. 5/22/2025 should be converted to 2025-05-22 before passing the date to the post_request_time_off tool.
+```
+
+*Note*: The above behavior is designed to encourage the agent to rely on the knowledge base, which contains incorrect answers. This will help us see how the monitoring metrics reflect the low-quality data in the knowledge base. Without this behavior, the default model gpt-oss-120b is smart enough to recognize that the answers in the knowledge base are incorrect and will not use them, which would result in good monitoring metrics and defeat the purpose of this lab.
 
 ### Deploy and set up monitoring
 
@@ -49,7 +69,7 @@ Upload this document containing [Medicare questions with unrelated answers](./me
 
 ### Test your agent in the Chat window
 
-From the hamburger menu at the top left, select **Agent chat**, choose your desired agent, and make some queries. You can use questions in the "Prompt" column in your test.csv file as sample questions. 
+From the hamburger menu at the top left, select **Agent chat**, choose your desired agent, and make some queries. You can use questions from the pdf [Medicare questions with unrelated answers](./medicare_unrelated_answers.pdf) as sample questions. 
 
    ![chat-view](images/gov-test-in-chat.png)
 
